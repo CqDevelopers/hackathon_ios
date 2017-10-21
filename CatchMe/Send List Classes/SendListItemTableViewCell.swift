@@ -18,6 +18,21 @@ class SendListItemTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameHeight: NSLayoutConstraint!
     @IBOutlet weak var locationHeight: NSLayoutConstraint!
 
+    var user: User = User(){
+        didSet {
+            userName.text = user.userName
+            location.text = user.location
+            if let url = user.photoUrl {
+                photo.sd_cancelCurrentAnimationImagesLoad()
+                photo.sd_setImage(
+                    with: URL(string: url),
+                    placeholderImage: UIImage(named: "loading"),
+                    options: .retryFailed
+                )
+            }
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,4 +44,28 @@ class SendListItemTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    //オブジェクトの幅・高さ編集
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        //ユーザー名
+        let userNameMaxFrame = CGRect(
+            x: 0,
+            y: 0,
+            width: userName.frame.size.width,
+            height: CGFloat.greatestFiniteMagnitude
+        )
+        let userNameActualFrame = userName.textRect(forBounds: userNameMaxFrame, limitedToNumberOfLines: 2)
+        userNameHeight.constant = userNameActualFrame.size.height
+        
+        //場所
+        let locaitonMaxFrame = CGRect(
+            x: 0,
+            y: 0,
+            width: location.frame.size.width,
+            height: CGFloat.greatestFiniteMagnitude
+        )
+        let locationActualFrame = userName.textRect(forBounds: locaitonMaxFrame, limitedToNumberOfLines: 2)
+        locationHeight.constant = locationActualFrame.size.height
+    }
 }
