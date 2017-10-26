@@ -19,14 +19,18 @@ public struct User: CustomStringConvertible {
     public var id: String? = nil
     public var userName: String? = nil
     public var photoUrl: String? = nil
+    public var mapUrl: String? = nil
     public var location: String? = nil
-    
+    public var requestDate: String? = nil
+
     public var description: String {
         get {
             var string = "\nId: \(id)\n"
             string += "UserName: \(userName)\n"
             string += "PhotoUrl: \(photoUrl)\n"
+            string += "MapUrl: \(mapUrl)\n"
             string += "Location: \(location)\n"
+            string += "RequestDate: \(requestDate)\n"
             
             return string
         }
@@ -54,8 +58,8 @@ public struct QueryCondition {
 }
 
 public class UserSearch {
-    //let apiUrl = "https://map.yahooapis.jp/search/local/V1/localSearch"
-    let apiUrl = "http://localhost:3000/samples"
+    let apiUrl = "https://tomcat-team10.hackathon.i-lop.net/app/api/userlist"
+    //let apiUrl = "http://localhost:3000/samples"
     let perPage = 10
     var loading = false
     public var users = [User]()
@@ -120,6 +124,8 @@ public class UserSearch {
                 user.userName = item["userName"].string
                 user.location = item["location"].string
                 user.photoUrl = item["photoUrl"].string
+                user.mapUrl = item["mapUrl"].string
+                user.requestDate = item["requestDate"].string
                 
                 print(user)
                 self.users.append(user)

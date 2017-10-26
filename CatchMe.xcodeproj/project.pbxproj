@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		140C8CBC41592AC562E0B6D1 /* Pods_CatchMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36300033AAAC2E3883AAEFC /* Pods_CatchMe.framework */; };
 		2D9ED02E4967C23544198DEB /* Pods_CatchMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD70C5E2E5975BC7AF0D1220 /* Pods_CatchMeUITests.framework */; };
+		2F0A1BAD1F9B3A00001251D6 /* RequestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A1BAC1F9B3A00001251D6 /* RequestListViewController.swift */; };
+		2F0A1BAF1F9B3A2C001251D6 /* RequestListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A1BAE1F9B3A2C001251D6 /* RequestListItemTableViewCell.swift */; };
+		2F0A1BB11F9B494D001251D6 /* notice.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BB01F9B494C001251D6 /* notice.png */; };
+		2F0A1BB31F9B4BAB001251D6 /* saveBotton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BB21F9B4BAB001251D6 /* saveBotton.png */; };
+		2F0A1BB51F9B4BD8001251D6 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BB41F9B4BD8001251D6 /* send.png */; };
+		2F0A1BB71F9C221E001251D6 /* launch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BB61F9C221E001251D6 /* launch-logo.png */; };
+		2F0A1BBB1F9C2615001251D6 /* RequestTargetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A1BBA1F9C2615001251D6 /* RequestTargetListViewController.swift */; };
+		2F0A1BBD1F9C2633001251D6 /* RequestTargetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A1BBC1F9C2633001251D6 /* RequestTargetListTableViewCell.swift */; };
+		2F0A1BC01F9C2C99001251D6 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A1BBF1F9C2C99001251D6 /* MyTabBarController.swift */; };
+		2F0A1BC31F9C456C001251D6 /* DefaultUserPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BC21F9C456C001251D6 /* DefaultUserPhoto.png */; };
+		2F0A1BC51F9C46E0001251D6 /* waiting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A1BC41F9C46E0001251D6 /* waiting.png */; };
 		2F7EC71A1F9A1D44009CDDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EC7191F9A1D44009CDDD3 /* AppDelegate.swift */; };
-		2F7EC71C1F9A1D44009CDDD3 /* SendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EC71B1F9A1D44009CDDD3 /* SendListViewController.swift */; };
+		2F7EC71C1F9A1D44009CDDD3 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EC71B1F9A1D44009CDDD3 /* RoomListViewController.swift */; };
 		2F7EC71F1F9A1D44009CDDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EC71D1F9A1D44009CDDD3 /* Main.storyboard */; };
 		2F7EC7211F9A1D44009CDDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EC7201F9A1D44009CDDD3 /* Assets.xcassets */; };
 		2F7EC7241F9A1D44009CDDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EC7221F9A1D44009CDDD3 /* LaunchScreen.storyboard */; };
 		2F7EC72F1F9A1D44009CDDD3 /* CatchMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EC72E1F9A1D44009CDDD3 /* CatchMeTests.swift */; };
 		2F7EC73A1F9A1D44009CDDD3 /* CatchMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EC7391F9A1D44009CDDD3 /* CatchMeUITests.swift */; };
-		2FFEB8511F9A2D440003B1B9 /* SendListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB8501F9A2D440003B1B9 /* SendListItemTableViewCell.swift */; };
-		2FFEB8551F9A37450003B1B9 /* RecieveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB8541F9A37450003B1B9 /* RecieveListViewController.swift */; };
-		2FFEB8571F9A37610003B1B9 /* RecieveListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB8561F9A37610003B1B9 /* RecieveListItemTableViewCell.swift */; };
+		2FFEB8511F9A2D440003B1B9 /* RoomListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB8501F9A2D440003B1B9 /* RoomListItemTableViewCell.swift */; };
 		2FFEB85A1F9AD01B0003B1B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB8591F9AD01B0003B1B9 /* User.swift */; };
 		2FFEB85D1F9B10230003B1B9 /* RootMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEB85C1F9B10230003B1B9 /* RootMapViewController.swift */; };
 		2FFEB8601F9B1EEA0003B1B9 /* button-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEB85F1F9B1EE90003B1B9 /* button-back.png */; };
+		2FFEB8621F9B32F50003B1B9 /* room.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEB8611F9B32F50003B1B9 /* room.png */; };
+		2FFEB8661F9B337C0003B1B9 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEB8651F9B337C0003B1B9 /* setting.png */; };
+		2FFEB8681F9B34360003B1B9 /* request.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEB8671F9B34350003B1B9 /* request.png */; };
 		5788131B683D52C4B0BE3875 /* Pods_CatchMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D0955ECB0C7559BFC2BFB /* Pods_CatchMeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,9 +57,21 @@
 /* Begin PBXFileReference section */
 		0C6D7A5082ADF6E7664883EC /* Pods-CatchMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatchMeTests/Pods-CatchMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		203AE6A5464BFC70E8DFBA71 /* Pods-CatchMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatchMeUITests/Pods-CatchMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F0A1BAC1F9B3A00001251D6 /* RequestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListViewController.swift; sourceTree = "<group>"; };
+		2F0A1BAE1F9B3A2C001251D6 /* RequestListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListItemTableViewCell.swift; sourceTree = "<group>"; };
+		2F0A1BB01F9B494C001251D6 /* notice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notice.png; path = ../../../../../../../Desktop/notice.png; sourceTree = "<group>"; };
+		2F0A1BB21F9B4BAB001251D6 /* saveBotton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saveBotton.png; path = ../../../../../../../Desktop/saveBotton.png; sourceTree = "<group>"; };
+		2F0A1BB41F9B4BD8001251D6 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = send.png; path = ../../../../../../../Desktop/send.png; sourceTree = "<group>"; };
+		2F0A1BB61F9C221E001251D6 /* launch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch-logo.png"; path = "../../../../../../../Desktop/launch-logo.png"; sourceTree = "<group>"; };
+		2F0A1BBA1F9C2615001251D6 /* RequestTargetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTargetListViewController.swift; sourceTree = "<group>"; };
+		2F0A1BBC1F9C2633001251D6 /* RequestTargetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTargetListTableViewCell.swift; sourceTree = "<group>"; };
+		2F0A1BBF1F9C2C99001251D6 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		2F0A1BC11F9C36EE001251D6 /* CatchMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatchMe.entitlements; sourceTree = "<group>"; };
+		2F0A1BC21F9C456C001251D6 /* DefaultUserPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultUserPhoto.png; path = ../../../../../../../Desktop/DefaultUserPhoto.png; sourceTree = "<group>"; };
+		2F0A1BC41F9C46E0001251D6 /* waiting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waiting.png; path = ../../../../../../../Desktop/waiting.png; sourceTree = "<group>"; };
 		2F7EC7161F9A1D44009CDDD3 /* CatchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7EC7191F9A1D44009CDDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F7EC71B1F9A1D44009CDDD3 /* SendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendListViewController.swift; sourceTree = "<group>"; };
+		2F7EC71B1F9A1D44009CDDD3 /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
 		2F7EC71E1F9A1D44009CDDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F7EC7201F9A1D44009CDDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7EC7231F9A1D44009CDDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,12 +83,13 @@
 		2F7EC7391F9A1D44009CDDD3 /* CatchMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchMeUITests.swift; sourceTree = "<group>"; };
 		2F7EC73B1F9A1D44009CDDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F7EC74E1F9A22C0009CDDD3 /* CatchMe-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CatchMe-Bridging-Header.h"; sourceTree = "<group>"; };
-		2FFEB8501F9A2D440003B1B9 /* SendListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendListItemTableViewCell.swift; sourceTree = "<group>"; };
-		2FFEB8541F9A37450003B1B9 /* RecieveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveListViewController.swift; sourceTree = "<group>"; };
-		2FFEB8561F9A37610003B1B9 /* RecieveListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveListItemTableViewCell.swift; sourceTree = "<group>"; };
+		2FFEB8501F9A2D440003B1B9 /* RoomListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListItemTableViewCell.swift; sourceTree = "<group>"; };
 		2FFEB8591F9AD01B0003B1B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2FFEB85C1F9B10230003B1B9 /* RootMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMapViewController.swift; sourceTree = "<group>"; };
 		2FFEB85F1F9B1EE90003B1B9 /* button-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-back.png"; path = "../../../../../../../Desktop/button-back.png"; sourceTree = "<group>"; };
+		2FFEB8611F9B32F50003B1B9 /* room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = room.png; path = ../../../../../../../Desktop/room.png; sourceTree = "<group>"; };
+		2FFEB8651F9B337C0003B1B9 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = ../../../../../../../Desktop/setting.png; sourceTree = "<group>"; };
+		2FFEB8671F9B34350003B1B9 /* request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = request.png; path = ../../../../../../../Desktop/request.png; sourceTree = "<group>"; };
 		33F6209128AB64C1580ED7E4 /* Pods-CatchMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatchMe/Pods-CatchMe.release.xcconfig"; sourceTree = "<group>"; };
 		689D0955ECB0C7559BFC2BFB /* Pods_CatchMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6550105C0FEFA048366F9F /* Pods-CatchMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatchMe/Pods-CatchMe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +127,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0A1BAB1F9B383B001251D6 /* Request List Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A1BAC1F9B3A00001251D6 /* RequestListViewController.swift */,
+				2F0A1BAE1F9B3A2C001251D6 /* RequestListItemTableViewCell.swift */,
+			);
+			path = "Request List Classes";
+			sourceTree = "<group>";
+		};
+		2F0A1BB91F9C25E6001251D6 /* Request Target List Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A1BBA1F9C2615001251D6 /* RequestTargetListViewController.swift */,
+				2F0A1BBC1F9C2633001251D6 /* RequestTargetListTableViewCell.swift */,
+			);
+			path = "Request Target List Classes";
+			sourceTree = "<group>";
+		};
+		2F0A1BBE1F9C2C51001251D6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A1BBF1F9C2C99001251D6 /* MyTabBarController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2F7EC70D1F9A1D43009CDDD3 = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +179,14 @@
 		2F7EC7181F9A1D44009CDDD3 /* CatchMe */ = {
 			isa = PBXGroup;
 			children = (
+				2F0A1BC11F9C36EE001251D6 /* CatchMe.entitlements */,
+				2F0A1BBE1F9C2C51001251D6 /* Common */,
+				2F0A1BB91F9C25E6001251D6 /* Request Target List Classes */,
+				2F0A1BAB1F9B383B001251D6 /* Request List Classes */,
 				2FFEB85E1F9B1ED80003B1B9 /* Resources */,
 				2FFEB85B1F9B0FAD0003B1B9 /* RootMap Classes */,
 				2FFEB8581F9ACFE90003B1B9 /* Model Classes */,
-				2FFEB8531F9A37100003B1B9 /* Recieve List Classes */,
-				2FFEB8491F9A27170003B1B9 /* Send List Classes */,
+				2FFEB8491F9A27170003B1B9 /* Room List Classes */,
 				2F7EC7191F9A1D44009CDDD3 /* AppDelegate.swift */,
 				2F7EC71D1F9A1D44009CDDD3 /* Main.storyboard */,
 				2F7EC7201F9A1D44009CDDD3 /* Assets.xcassets */,
@@ -160,22 +214,13 @@
 			path = CatchMeUITests;
 			sourceTree = "<group>";
 		};
-		2FFEB8491F9A27170003B1B9 /* Send List Classes */ = {
+		2FFEB8491F9A27170003B1B9 /* Room List Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2F7EC71B1F9A1D44009CDDD3 /* SendListViewController.swift */,
-				2FFEB8501F9A2D440003B1B9 /* SendListItemTableViewCell.swift */,
+				2F7EC71B1F9A1D44009CDDD3 /* RoomListViewController.swift */,
+				2FFEB8501F9A2D440003B1B9 /* RoomListItemTableViewCell.swift */,
 			);
-			path = "Send List Classes";
-			sourceTree = "<group>";
-		};
-		2FFEB8531F9A37100003B1B9 /* Recieve List Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2FFEB8541F9A37450003B1B9 /* RecieveListViewController.swift */,
-				2FFEB8561F9A37610003B1B9 /* RecieveListItemTableViewCell.swift */,
-			);
-			path = "Recieve List Classes";
+			path = "Room List Classes";
 			sourceTree = "<group>";
 		};
 		2FFEB8581F9ACFE90003B1B9 /* Model Classes */ = {
@@ -197,6 +242,15 @@
 		2FFEB85E1F9B1ED80003B1B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2F0A1BC41F9C46E0001251D6 /* waiting.png */,
+				2F0A1BC21F9C456C001251D6 /* DefaultUserPhoto.png */,
+				2F0A1BB61F9C221E001251D6 /* launch-logo.png */,
+				2F0A1BB41F9B4BD8001251D6 /* send.png */,
+				2F0A1BB21F9B4BAB001251D6 /* saveBotton.png */,
+				2F0A1BB01F9B494C001251D6 /* notice.png */,
+				2FFEB8671F9B34350003B1B9 /* request.png */,
+				2FFEB8651F9B337C0003B1B9 /* setting.png */,
+				2FFEB8611F9B32F50003B1B9 /* room.png */,
 				2FFEB85F1F9B1EE90003B1B9 /* button-back.png */,
 			);
 			path = Resources;
@@ -303,7 +357,15 @@
 					2F7EC7151F9A1D44009CDDD3 = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2F7EC7291F9A1D44009CDDD3 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -343,9 +405,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFEB8601F9B1EEA0003B1B9 /* button-back.png in Resources */,
+				2F0A1BC31F9C456C001251D6 /* DefaultUserPhoto.png in Resources */,
+				2F0A1BC51F9C46E0001251D6 /* waiting.png in Resources */,
+				2F0A1BB71F9C221E001251D6 /* launch-logo.png in Resources */,
+				2F0A1BB51F9B4BD8001251D6 /* send.png in Resources */,
+				2FFEB8621F9B32F50003B1B9 /* room.png in Resources */,
+				2FFEB8661F9B337C0003B1B9 /* setting.png in Resources */,
 				2F7EC7241F9A1D44009CDDD3 /* LaunchScreen.storyboard in Resources */,
+				2F0A1BB31F9B4BAB001251D6 /* saveBotton.png in Resources */,
+				2FFEB8681F9B34360003B1B9 /* request.png in Resources */,
 				2F7EC7211F9A1D44009CDDD3 /* Assets.xcassets in Resources */,
 				2F7EC71F1F9A1D44009CDDD3 /* Main.storyboard in Resources */,
+				2F0A1BB11F9B494D001251D6 /* notice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,13 +595,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFEB8551F9A37450003B1B9 /* RecieveListViewController.swift in Sources */,
-				2F7EC71C1F9A1D44009CDDD3 /* SendListViewController.swift in Sources */,
+				2F7EC71C1F9A1D44009CDDD3 /* RoomListViewController.swift in Sources */,
 				2FFEB85D1F9B10230003B1B9 /* RootMapViewController.swift in Sources */,
+				2F0A1BAD1F9B3A00001251D6 /* RequestListViewController.swift in Sources */,
+				2F0A1BBB1F9C2615001251D6 /* RequestTargetListViewController.swift in Sources */,
+				2F0A1BAF1F9B3A2C001251D6 /* RequestListItemTableViewCell.swift in Sources */,
 				2FFEB85A1F9AD01B0003B1B9 /* User.swift in Sources */,
-				2FFEB8571F9A37610003B1B9 /* RecieveListItemTableViewCell.swift in Sources */,
-				2FFEB8511F9A2D440003B1B9 /* SendListItemTableViewCell.swift in Sources */,
+				2F0A1BBD1F9C2633001251D6 /* RequestTargetListTableViewCell.swift in Sources */,
+				2FFEB8511F9A2D440003B1B9 /* RoomListItemTableViewCell.swift in Sources */,
 				2F7EC71A1F9A1D44009CDDD3 /* AppDelegate.swift in Sources */,
+				2F0A1BC01F9C2C99001251D6 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,13 +772,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZBN3GJ575;
+				CODE_SIGN_ENTITLEMENTS = CatchMe/CatchMe.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SGQB46QNMN;
 				INFOPLIST_FILE = CatchMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qlc.arqrid.team10.CatchMe;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.intec.422.q;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af815ab1-f09c-46b7-8157-eb6033b7e128";
+				PROVISIONING_PROFILE_SPECIFIER = "applicationformanual profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "CatchMe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -718,13 +795,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZBN3GJ575;
+				CODE_SIGN_ENTITLEMENTS = CatchMe/CatchMe.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SGQB46QNMN;
 				INFOPLIST_FILE = CatchMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qlc.arqrid.team10.CatchMe;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.intec.422.q;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af815ab1-f09c-46b7-8157-eb6033b7e128";
+				PROVISIONING_PROFILE_SPECIFIER = "applicationformanual profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "CatchMe-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

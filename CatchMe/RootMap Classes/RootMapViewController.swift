@@ -16,15 +16,19 @@ class RootMapViewController: UIViewController {
     @IBOutlet weak var cancel: UIBarButtonItem!
 
     //TODO
-    let homeUrlString = "http://www.qualica.co.jp/"
+    var homeUrlString = "https://tomcat-team10.hackathon.i-lop.net/app/map/1/"
+    //var homeUrlString = "https://www.qualica.co.jp/"
 
     var user = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //var userCode
+        print(user)
+        if var unwrapped = user.mapUrl {
+            homeUrlString = unwrapped
+        }
         //URLを開く
+        print(homeUrlString)
         open(urlString: homeUrlString)
     }
 
@@ -44,23 +48,11 @@ class RootMapViewController: UIViewController {
     }
 
     func open(urlString: String){
-        let param = String(format: "search=%@&password=%@", "careqube", "PASSWORD")
-        let url = URL(string: "\(urlString)search/index.html?\(param)")
+        //let param = String(format: "search=%@&password=%@", "careqube", "PASSWORD")
+        //let url = URL(string: "\(urlString)search/index.html?\(param)")
+        let url = URL(string: "\(urlString)")
         let urlRequest = URLRequest(url: url!)
         webView.loadRequest(urlRequest)
-    }
-
-    //MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "RootMapToList" {
-            let sc = segue.destination as! SendListViewController
-        }
-    }
-
-    //MARK: - Back Botton
-    @IBAction func backBottonTapped(_ sender: Any) {
-        //Segueの実行
-        performSegue(withIdentifier: "RootMapToList", sender: sender)
     }
 
     /*

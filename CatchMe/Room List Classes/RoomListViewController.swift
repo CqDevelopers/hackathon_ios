@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SendListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RoomListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -20,7 +20,7 @@ class SendListViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         //Pull to Refreshコントロール初期化
         let refreshControll = UIRefreshControl()
-        refreshControll.addTarget(self, action: #selector(SendListViewController.onRefresh(_:)), for: .valueChanged)
+        refreshControll.addTarget(self, action: #selector(RoomListViewController.onRefresh(_:)), for: .valueChanged)
         self.tableView.addSubview(refreshControll)
     }
 
@@ -90,7 +90,7 @@ class SendListViewController: UIViewController, UITableViewDelegate, UITableView
         if indexPath.section == 0 {
             if indexPath.row < us.users.count {
                 //取得結果をセルに設定
-                let cell = tableView.dequeueReusableCell(withIdentifier: "SendListItem") as! SendListItemTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "RoomListItem") as! RoomListItemTableViewCell
                 cell.user = us.users[indexPath.row]
                 
                 //無限スクロールの処理

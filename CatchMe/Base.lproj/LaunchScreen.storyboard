@@ -17,7 +17,13 @@
                     <view key="view" contentMode="scaleToFill" id="QG4-el-qUK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="9uE-8p-M8c">
+                                <rect key="frame" x="157" y="303" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Kv9-EZ-7Km"/>
                     </view>
                 </viewController>
@@ -26,4 +32,7 @@
             <point key="canvasLocation" x="-591" y="-152"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch-logo.png" width="72" height="72"/>
+    </resources>
 </document>

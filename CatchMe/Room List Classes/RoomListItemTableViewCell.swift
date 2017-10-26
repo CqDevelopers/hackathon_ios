@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SendListItemTableViewCell: UITableViewCell {
+class RoomListItemTableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var photo: UIImageView!
@@ -22,14 +22,14 @@ class SendListItemTableViewCell: UITableViewCell {
         didSet {
             userName.text = user.userName
             location.text = user.location
-            if let url = user.photoUrl {
-                photo.sd_cancelCurrentAnimationImagesLoad()
-                photo.sd_setImage(
-                    with: URL(string: url),
-                    placeholderImage: UIImage(named: "loading"),
-                    options: .retryFailed
-                )
-            }
+//            if let url = user.photoUrl {
+//                photo.sd_cancelCurrentAnimationImagesLoad()
+//                photo.sd_setImage(
+//                    with: URL(string: url),
+//                    placeholderImage: UIImage(named: "loading"),
+//                    options: .retryFailed
+//                )
+//            }
         }
     }
 
@@ -59,13 +59,16 @@ class SendListItemTableViewCell: UITableViewCell {
         userNameHeight.constant = userNameActualFrame.size.height
         
         //場所
+        location.numberOfLines = 0
+        location.sizeToFit()
+        location.lineBreakMode = NSLineBreakMode.byCharWrapping
         let locaitonMaxFrame = CGRect(
             x: 0,
             y: 0,
             width: location.frame.size.width,
             height: CGFloat.greatestFiniteMagnitude
         )
-        let locationActualFrame = userName.textRect(forBounds: locaitonMaxFrame, limitedToNumberOfLines: 2)
+        let locationActualFrame = location.textRect(forBounds: locaitonMaxFrame, limitedToNumberOfLines: 2)
         locationHeight.constant = locationActualFrame.size.height
     }
 }

@@ -7,16 +7,59 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //ナビゲーションアイテムの色を変更
+        UINavigationBar.appearance().tintColor = UIColor.orange
+        
+        if #available(iOS 10.0, *) {
+            
+            //ios10
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.badge, .sound, .alert], completionHandler: { (granted, error) in
+                if error != nil {
+                    return
+                }
+                if granted {
+                    debugPrint("通知許可")
+                    center.delegate = self
+                    application.registerForRemoteNotifications()
+                } else {
+                    debugPrint("通知拒否")
+                }
+            })
+            
+        } else {
+            // ios9
+            let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(settings)
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+        
         return true
+    }
+
+    //リモート通知
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        // そのままだと「32bit」という文字列なので以下の処理を行います
+        let deviceTokenString: String = deviceToken.map { String(format: "%.2hhx", $0) }.joined()
+        print("deviceTokenString \(deviceTokenString)")
+        print("test")
+        //util.setUserDefaultsObject(value: deviceTokenString, key: udDeviceToken) // これは自前
+    }
+
+    //リモート通知を拒否したときの動作
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {1
+        debugPrint("リモート通知の設定は拒否されました")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
